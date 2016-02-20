@@ -1,8 +1,10 @@
-# ES6 starter
+# Angular 2 starter
+
+- Angular 2 template 
+- component specific style
+- base style
 
 ```
-npm install
-npm run dev //  run dev server
-npm run sourcemap // debug build with source map
-npm run build // run build with watch mode
+npm i
+npm run go
 ```
