@@ -9,27 +9,29 @@ System.register(["angular2/core"], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var Child;
+    var MyApp;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            Child = (function () {
-                function Child() {
+            MyApp = (function () {
+                function MyApp() {
+                    this.name = "Hemant Kumar Singh";
                 }
-                Child = __decorate([
+                MyApp = __decorate([
                     core_1.Component({
-                        selector: "child",
-                        template: "\n\t<h2 class=\"red\">I am child component</h2>"
+                        selector: "app",
+                        template: "\n  <div class=\"container\">\n    <h1>Root Component</h1>\n    <p>My Name is - <strong>{{ name }}</strong>\n  </div>",
+                        styles: ["\n      h1{\n        background-color: green;\n        color: yellow;\n      }\n  "]
                     }), 
                     __metadata('design:paramtypes', [])
-                ], Child);
-                return Child;
+                ], MyApp);
+                return MyApp;
             })();
-            exports_1("Child", Child);
+            exports_1("MyApp", MyApp);
         }
     }
 });
-//# sourceMappingURL=child.js.map
+//# sourceMappingURL=app.component.js.map

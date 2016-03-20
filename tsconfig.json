@@ -8,8 +8,8 @@
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": false,
-    "outDir": "app",
-    "rootDir": "dev"
+    "outDir": "public/app",
+    "rootDir": "public/dev"
   },
   "exclude": [
     "node_modules"
