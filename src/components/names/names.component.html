@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <h1>Add Name</h1>
+    <form (submit)="addName()" class="form-inline m-t-20">
+    	<div class="form-group">
+    		<input [(ngModel)]="newName" class="form-control" placeholder="Awesome Computer Scientist">
+    	</div>
+        
+        <button type="submit" class="btn btn-default"><i class="ti-plus"></i> Add</button>
+    </form>
+
+    <h2>All Names you looking for</h2>
+    <ul class="list-group">
+        <li *ngFor="#name of nameListService.get()" 
+        	class="list-group-item">{{name}}</li>
+    </ul>
+</div>
