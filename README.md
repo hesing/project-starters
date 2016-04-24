@@ -1,81 +1,23 @@
 # Angular 2 bootstrap starter
 
+## Setup
+
 ```
+npm install -g ts-node
+gem install scss_lint ( required for sass lint to work )
 npm i
+```
+## How to start
+
+```][poi]
 npm start ( dev with watch )
+npm run build.dev ( dev build )
 npm run build.prod ( production build )
 node server.js ( run prod build )
 ```
 
-# How to start
 
 **Note** that this seed project requires node v4.x.x or higher and npm 2.14.7.
-
-You must have `ts-node` installed as global. If you don't, use:
-
-```bash
-npm install -g ts-node
-```
-
-You must also have Ruby and [scss-lint](https://github.com/brigade/scss-lint) installed. If you are running on MacOS, to install `scss-lint` you need to use `sudo` and a folder that you can write to. For example:
-
-```bash
-sudo gem install -n /usr/local/bin scss_lint
-```
-
-In order to start using seed:
-
-```bash
-git clone --depth 1 https://github.com/archfirst/angular2-seed-sass.git
-cd angular2-seed-sass
-# install the project's dependencies
-npm install
-# watches your files and uses livereload by default
-npm start
-# api document for the app
-npm run docs
-
-# dev build
-npm run build.dev
-# prod build
-npm run build.prod
-```
-
-_Does not rely on any global dependencies._
-
-# Table of Content
-
-- [Introduction](#introduction)
-- [How to start](#how-to-start)
-- [Table of Content](#table-of-content)
-- [Configuration](#configuration)
-- [How to extend?](#how-to-extend)
-- [Running tests](#running-tests)
-- [Contributing](#contributing)
-- [Directory Structure](#directory-structure)
-- [Change Log](#change-log)
-- [License](#license)
-
-# Configuration
-
-Default application server configuration
-
-```javascript
-var PORT             = 5555;
-var LIVE_RELOAD_PORT = 4002;
-var DOCS_PORT        = 4003;
-var APP_BASE         = '/';
-```
-
-Configure at runtime
-
-```bash
-npm start -- --port 8080 --reload-port 4000 --base /my-app/
-```
-
-# How to extend?
-
-Visit the [Wiki page](https://github.com/mgechev/angular2-seed/wiki) of the project.
 
 # Running tests
 
