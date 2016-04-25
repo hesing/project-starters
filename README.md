@@ -54,67 +54,28 @@ Please see the [CONTRIBUTING](https://github.com/mgechev/angular2-seed/blob/mast
 # Directory Structure
 
 ```
-.
-├── LICENSE
-├── README.md
-├── gulpfile.ts                <- configuration of the gulp tasks
-├── karma.conf.js              <- configuration of the test runner
-├── package.json               <- dependencies of the project
-├── protractor.conf.js         <- e2e tests configuration
-├── src                        <- source code of the application
-│   ├── home
-│   │   └── components
-│   ├── index.html
-│   ├── main.ts
-│   ├── shared
-│   │   └── services
-│   │       ├── name-list...
-│   │       └── name-list...
-│   └── sw.js                  <- sample service worker
-├── test-main.js               <- testing configuration
-├── tools
-│   ├── README.md              <- build documentation
-│   ├── config
-│   │   ├── project.config.ts  <- configuration of the specific project
-│   │   ├── seed.config....
-│   │   └── seed.config.ts     <- generic configuration of the seed project
-│   ├── config.ts              <- exported configuration (merge both seed.config and project.config, project.config overrides seed.config)
-│   ├── debug.ts
-│   ├── manual_typings
-│   │   ├── project            <- manual ambient typings for the project
-│   │   │   └── sample.pac...
-│   │   └── seed               <- seed manual ambient typings
-│   │       ├── merge-stre..
-│   │       └── slash.d.ts
-│   ├── tasks                  <- gulp tasks
-│   │   ├── project            <- project specific gulp tasks
-│   │   │   └── sample.tas...
-│   │   └── seed               <- seed generic gulp tasks. They can be overriden by the project specific gulp tasks
-│   ├── utils                  <- build utils
-│   │   ├── project            <- project specific gulp utils
-│   │   │   └── sample_util...
-│   │   ├── project.utils.ts
-│   │   ├── seed               <- seed specific gulp utils
-│   │   │   ├── clean.ts
-│   │   │   ├── code_change...
-│   │   │   ├── server.ts
-│   │   │   ├── tasks_tools.ts
-│   │   │   ├── template_loc...
-│   │   │   ├── tsproject.ts
-│   │   │   └── watch.ts
-│   │   └── seed.utils.ts
-│   └── utils.ts
-├── tsconfig.json              <- configuration of the typescript project (ts-node, which runs the tasks defined in gulpfile.ts)
-├── tslint.json                <- tslint configuration
-├── typings                    <- typings directory. Contains all the external typing definitions defined with typings
-├── typings.json
-└── appveyor.yml
+D:.
+├───coverage
+├───dist
+│   ├───dev
+│   ├───prod
+│   └───tmp
+├───src
+│   ├───assets
+│   ├───components
+│   │   ├───about
+│   │   ├───app
+│   │   ├───home
+│   │   ├───names
+│   │   ├───navbar
+│   │   └───shared
+│   │       └───services
+│   ├───fonts
+│   ├───images
+│   └───scss
+│       ├───bootstrap-sass-3.3.6
+│       ├───components
+│       └───theme
+├───tools
+└───typings
 ```
-
-# Change Log
-
-You can follow the [Angular 2 change log here](https://github.com/angular/angular/blob/master/CHANGELOG.md).
-
-# License
-
-MIT
